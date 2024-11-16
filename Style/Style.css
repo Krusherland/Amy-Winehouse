@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Metal&display=swap");
+
+* {
+  /*font-family: "Metal", serif;
+  font-family: "Limelight", sans-serif;*/
+  font-style: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: url(../Assets/);
+}
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  background-color: black;
+}
+@media (max-width: 800px) {
+  .navLinks ul li {
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
+.logo {
+  border-radius: 50%;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.brand {
+  display: flex;
+  p {
+    font-family: "Metal", serif;
+    font-size: 20px;
+  }
+}
+.navLinks li {
+  font-family: "Limelight", sans-serif;
+  display: inline-flex;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+.navlink {
+  color: black;
+  padding: 2px;
+  background-color: white;
+  border-radius: 10%;
+}
+a:hover {
+  color: gray;
+  transition: color 0.3s ease;
+}
+.navStore {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-around;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  margin-top: 70px;
+  background-color: black;
+  ul li {
+    font-family: "Limelight", sans-serif;
+    display: inline-flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 25px;
+  }
+}
+.head {
+  background-image: url(../Assets/Amy\ Winehouse\ 9.jpg);
+}
+.artistHead {
+  background-image: url(../Assets/Amy\ Winehouse\ 15.jfif);
+}
+.musicHead {
+  background-image: url(../Assets/Amy\ Winehouse\ 16.jpg);
+}
+.contactHead {
+  background-image: url(../Assets/Amy\ Winehouse\ 13.jpg);
+  height: 300px !important;
+}
+.storeHead {
+  height: 100px;
+}
+.head,
+.artistHead,
+.musicHead,
+.contactHead {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  text-align: end;
+  padding-top: 100px;
+  padding-right: 40px;
+  font-family: "Metal", serif;
+  font-size: 50px;
+}
+h2,
+h3 {
+  font-size: 40px;
+  border-style: solid;
+}
+.introduction,
+.biography,
+.store,
+.gallery,
+.discography,
+.musicDiscography,
+.Acknowledgments,
+.products,
+.contact {
+  font-family: "Limelight", sans-serif;
+  font-size: 25px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.musicHead h1 {
+  color: black;
+}
+.cursive {
+  font-size: 50px;
+  font-family: "Metal", serif;
+}
+.introText,
+.bioText,
+.grammysText p {
+  font-family: "Metal", serif;
+  list-style: decimal;
+}
+.story,
+.narration,
+.albums,
+.Frank,
+.BackToBlack,
+.Grammys,
+.contactInfo {
+  padding-top: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: start;
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .story,
+  .narration,
+  .albums,
+  .Frank,
+  .BackToBlack,
+  .Grammys,
+  .contactInfo {
+    flex-direction: column;
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .Acknowledgments h3 {
+    font-size: 40px;
+  }
+}
+a:hover {
+  color: gray;
+  transition: color 0.3s ease;
+}
+.album1,
+.album2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+  }
+}
+.storeImg {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+  }
+}
+a:hover {
+  color: gray;
+  transition: color 0.3s ease;
+}
+footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+  }
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 40px;
+}
+.galleryImg {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.galleryImg img {
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 104px 0px 103px 0px;
+  -webkit-border-radius: 104px 0px 103px 0px;
+  -moz-border-radius: 104px 0px 103px 0px;
+  border: 3px solid #fdfdfd;
+}
+.galleryImg img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  border: none;
+}
+.musicDiscography {
+  display: flex;
+  flex-direction: column;
+  font-family: "Limelight", sans-serif;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-between;
+  margin: 40px;
+}
+.items img {
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid #fdfdfd;
+}
+
+.items img:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.3s ease;
+  border: none;
+  border-radius: 20px;
+}
+.item button {
+  color: black;
+  font-size: 20px;
+}
+.contactForm,
+.map {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  color: black;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+input[name="message"] {
+  height: 150px;
+  width: 300px;
+}
