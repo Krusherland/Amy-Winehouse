@@ -31,6 +31,7 @@
           <li><a href="../Pages/Music.html">Music</a></li>
           <li><a href="../Pages/Store.html">Store</a></li>
           <li><a href="../Pages/Contact.html" class="navlink">Contact</a></li>
+          <li><a href="../Pages/Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -44,36 +45,42 @@
           <div class="contactForm">
             <p>Send us your messages!</p>
             <p></p>
-            <form action="">
+            <form action="" id="contactMessage">
               <div>
                 <input
                   type="text"
                   placeholder="Enter your name"
                   id="name"
                   name="name"
-                  required
                 />
               </div>
+              <small id="nameError" class="errorMessage"
+                >The name you entered is invalid.</small
+              >
               <div>
                 <input
                   type="email"
                   placeholder="Enter your email"
                   id="email"
                   name="email"
-                  required
                 />
               </div>
+              <small id="emailError" class="errorMessage"
+                >The email you entered is invalid.</small
+              >
               <div>
                 <input
                   type="text"
                   placeholder="Write your message"
                   id="message"
                   name="message"
-                  required
                 />
-                <div>
-                  <input type="submit" value="Send Message" />
-                </div>
+              </div>
+              <small id="messageError" class="errorMessage"
+                >The message is too short.</small
+              >
+              <div>
+                <input type="submit" value="Send Message" />
               </div>
             </form>
           </div>
@@ -118,5 +125,6 @@
         </a>
       </div>
     </footer>
+    <script src="../JS/contactForm.js"></script>
   </body>
 </html>

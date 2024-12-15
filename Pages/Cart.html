@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amy | Cart</title>
+    <script
+      src="https://kit.fontawesome.com/e81ff7ccb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../Assets/favicon.ico" />
+    <link rel="stylesheet" href="../Style/Style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img
+          class="logo"
+          src="../Assets/favicon.ico"
+          alt="AW logo"
+          width="60px"
+        />
+      </a>
+      <div class="brand">
+        <p>Amy Jade Winehouse</p>
+      </div>
+      <nav class="navLinks">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/Artist.html">Artist</a></li>
+          <li><a href="../Pages/Music.html">Music</a></li>
+          <li><a href="../Pages/Store.html">Store</a></li>
+          <li><a href="../Pages/Contact.html">Contact</a></li>
+          <li>
+            <a href="../Pages/Cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="CartTicket">
+        <h1>Your cart</h1>
+        <table class="Cart">
+          <thead>
+            <tr>
+              <th>Ticket</th>
+            </tr>
+          </thead>
+          <tbody id="Ticket">
+          </tbody>
+        </table>
+        <div>
+            <h3>Total: $<span id="totalTicket"></span></h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© Amy Winehouse 2024. All rights reserved.</p>
+      <address>
+        <p>Address: Great Britain, London.</p>
+        <p>telephone: 1-123-1234-123</p>
+        <p>
+          <a href="https://amywinehousefoundation.org/"
+            >Amy Winehouse Foundation Site</a
+          >
+        </p>
+      </address>
+      <div class="socials">
+        <p>Instagram</p>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <p>Twitter</p>
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <p>Spotify</p>
+        <a href="https://www.spotify.com/" target="_blank">
+          <i class="fab fa-spotify"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="../JS/addToCart.js"></script>
+    <script src="../JS/cart.js"></script>
+  </body>
+</html>

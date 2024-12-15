@@ -24,13 +24,13 @@ header {
   position: fixed;
   background-color: black;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   header {
     height: 130px;
   }
   .navLinks ul li {
     flex-direction: column;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .logo {
@@ -87,13 +87,13 @@ a:hover {
     font-size: 25px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .navStore {
     height: 100px;
     margin-top: 130px;
     ul li {
       flex-direction: column;
-      font-size: 30px;
+      font-size: 25px;
     }
   }
 }
@@ -108,7 +108,7 @@ a:hover {
 }
 .contactHead {
   background-image: url(../Assets/Amy\ Winehouse\ 13.jpg);
-  height: 300px !important;
+  height: 400px !important;
 }
 .storeHead {
   height: 100px;
@@ -170,7 +170,8 @@ h3 {
 .Frank,
 .BackToBlack,
 .Grammys,
-.contactInfo {
+.contactInfo,
+.Cart {
   padding-top: 50px;
   display: inline-flex;
   align-items: center;
@@ -178,7 +179,7 @@ h3 {
   text-align: start;
   gap: 40px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .story,
   .narration,
   .albums,
@@ -190,7 +191,7 @@ h3 {
     font-size: 20px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .Acknowledgments h3 {
     font-size: 30px;
   }
@@ -234,7 +235,7 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
   }
@@ -281,7 +282,7 @@ footer {
   justify-content: space-between;
   margin: 40px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .items {
     flex-direction: column;
   }
@@ -291,23 +292,34 @@ footer {
   height: 400px;
   margin: 10px;
   padding: 10px;
+}
+.item {
   border-radius: 20px;
   border: 3px solid #fdfdfd;
-}
 
-.items img:hover {
-  transform: scale(1.1);
-  transition: ease-out 0.3s ease;
-  border: none;
-  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.item:hover {
+  background-color: #5c5c5c;
+  transition: all 0.3s ease-in-out;
+  h4 {
+    color: black;
+  }
 }
 .item button {
+  padding: 8px;
+  border-radius: 10px;
   color: black;
+  cursor: pointer;
   font-size: 20px;
+}
+.item button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 .contactForm,
 .map {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,10 +329,66 @@ input {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
+  width: 400px;
 }
 input[name="message"] {
   height: 150px;
-  width: 300px;
+}
+small {
+  color: #9f0d0d;
+}
+.errorMessage {
+  display: none;
+}
+
+.CartTicket {
+  background-image: url(../Assets/Amy\ Winehouse\ 12.jpg);
+  padding-top: 100px;
+  font-family: "Limelight", sans-serif;
+  font-size: 30px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  h1,
+  h3,
+  th,
+  td {
+    color: black;
+  }
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  th {
+  background-color: #000000;
+  border-radius: 10%;
+  padding: 4px;
+  color: white;
+  font-size: 50px;
+  }
+  .Cart {
+    border-collapse: collapse;
+    border: 3px solid black;
+    width: 500px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    td {
+      padding: 20px;
+      background-color: whitesmoke
+    }
+  }
+}
+.CartTicket {
+  padding-bottom: 30px;
+}
+#totalTicket {
+  color: black;
+}
+.Delete {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
 }
