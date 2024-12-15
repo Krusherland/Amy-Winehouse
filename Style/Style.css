@@ -383,6 +383,7 @@ small {
   padding-bottom: 30px;
 }
 #totalTicket {
+  margin: 10px;
   color: black;
 }
 .Delete {
@@ -391,4 +392,13 @@ small {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+
+.buy {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
 }
