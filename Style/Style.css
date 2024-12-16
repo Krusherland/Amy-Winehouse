@@ -30,7 +30,7 @@ header {
   }
   .navLinks ul li {
     flex-direction: column;
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 .logo {
@@ -61,7 +61,7 @@ ul {
 }
 .navlink {
   color: black;
-  padding: 2px;
+  padding: 1px;
   background-color: white;
   border-radius: 10%;
 }
@@ -356,6 +356,7 @@ small {
   td {
     color: black;
   }
+
   tr:nth-child(even){background-color: #f2f2f2}
 
   th {
@@ -365,11 +366,12 @@ small {
   color: white;
   font-size: 50px;
   }
+
   .Cart {
     border-collapse: collapse;
     border: 3px solid black;
     width: 500px;
-    padding-bottom: 30px;
+    margin-top: 30px;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
@@ -380,7 +382,11 @@ small {
   }
 }
 .CartTicket {
-  padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    h1 {
+      margin-top: 50px;
+    }
 }
 #totalTicket {
   margin: 10px;
